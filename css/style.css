@@ -40,7 +40,7 @@ body{
     background-image: linear-gradient(180deg, #0000008c 0%, #0000008c 100%), url('../images/wilderduarte_frontpage.jpg');
     background-size: cover;
     clip-path: polygon(100% 0, 100% 80%, 50% 100%, 0 80%, 0 0);
-    z-index: -1;
+    z-index: -2;
 }
 
 /* nav */
@@ -189,20 +189,21 @@ body{
     display: block;
 }
 
-/* slider */
+/* Slider */
 
-.testimony{
-    background-color:#ffffff;
+.testimony {
+    background-color: #ffffff;
 }
 
-.testimony_container{
+.testimony_container {
     display: grid;
     grid-template-columns: 50px 1fr 50px;
+
     gap: 1em;
     align-items: center;
 }
 
-.testimony_body{
+.testimony_body {
     display: grid;
     grid-template-columns: 1fr max-content;
     justify-content: space-between;
@@ -214,13 +215,13 @@ body{
     pointer-events: none;
 }
 
-.testimony_body--show{
+.testimony_body--show {
     pointer-events: unset;
     opacity: 1;
-    transition: opacity 1.5s ease-in-out;
+    transition: opacity 1.5x ease-in-out;
 }
 
-.testimony_img{
+.testimony_img {
     width: 250px;
     height: 250px;
     border-radius: 50%;
@@ -228,63 +229,63 @@ body{
     object-position: 50% 30%;
 }
 
-.testimony_texts{
-max-width: 700px;
+.testimony_texts {
+    max-width: 700px;
 }
 
-.testimony_course{
+.testimony_course {
     background-color: royalblue;
     color: #fff;
     display: inline-block;
     padding: 5px;
 }
 
-.testimony_arrow{
+.testimony_arrow {
     width: 90%;
     cursor: pointer;
 }
 
 /* questions */
 
-.questions{
+.questions {
     text-align: center;
     background-color: #e5e5f7;
 }
 
-.questions_container{
+.questions_container {
     display: grid;
     gap: 2em;
     padding-top: 50px;
     padding-bottom: 100px;
 }
 
-.questions_padding{
+.questions_padding {
     padding: 0;
     transition: padding .3s;
-    border: 1px solid #444cf7;
+    border: 1px solid #5454d4;
     border-radius: 6px;
 }
 
-.questions_padding--add{
-    padding-bottom: 30px;
+.questions_padding--add {
+    padding-bottom: hidden;
 }
 
-.questions_answer{
+.questions_answer {
     padding: 0 30px 0;
     overflow: hidden;
 }
 
-.questions_title{
+.questions_title {
     text-align: left;
     display: flex;
     font-size: 20px;
-    padding: 30px 0px 30px;
+    padding: 30px 0 30px;
     cursor: pointer;
     color: var(--color-title);
     justify-content: space-between;
 }
 
-.questions_arrow{
+.questions_arrow {
     border-radius: 50%;
     background-color: var(--color-title);
     width: 25px;
@@ -297,26 +298,25 @@ max-width: 700px;
     transition: transform .3s;
 }
 
-.questions_arrow--rotate{
-    transform: rotate(180deg);
+.questions_arrow--rotate {
+    transform: rotate(100deg);
 }
 
-.questions_show{
+.questions_show {
     text-align: left;
     height: 0;
     transition: height .3s;
 }
 
-.questions_leg{
+.questions_img {
     display: block;
 }
 
-.questions_copy{
+.questions_copy {
     width: 60%;
     margin: 0 auto;
     margin-bottom: 30px;
 }
-
 
 /* footer */
 
